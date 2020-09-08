@@ -1,0 +1,166 @@
+
+extends ../layout/main
+block variable
+	-
+		var title_page = 'КВАРТИРИ З ОЗДОБЛЕННЯМ'
+		var id_page = 'ready-page'
+		var class_page = 'ready-page'
+	
+block meta
+	title= title_page
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(defer src='./assets/scripts/ready.js')
+block content
+	section.main
+		.main__left
+			.main__title КВАРТИРИ З <br> ОЗДОБЛЕННЯМ
+			.main__block
+				+img('ready-logo.svg').main__logo
+				.main__desc Квартира с ремонтом #READYDIM. Идеальное бизнес-решения - готова к сдаче в аренду сразу.
+				a(href="#" class="btn main__btn") Обрати квартиру
+		.main__right
+			.main__controls
+				button(type="button" class="main__controls-btn main__controls-btn--next")
+					+svg('control-big-arrow')
+				.main__controls-info
+					span.main__controls-info-current 1/
+					span.main__controls-info-total 5
+			.main__slider
+				.main__item
+					+img('ready-main-bg.jpg')
+				.main__item
+					+img('ready-main-bg.jpg')
+				.main__item
+					+img('ready-main-bg.jpg')
+				.main__item
+					+img('ready-main-bg.jpg')
+				.main__item
+					+img('ready-main-bg.jpg')
+	.intro
+		.intro__content
+			h2.intro__title ПРОДУКТ, ПРОДУМАНИЙ ДО ДЕТАЛЕЙ
+			p.intro__desc Вы получите качественно реализованные, современно оснащенные и эргономично продуманные условия для жизни под ключ. Это лучшее начало новой страницы вашей личной истории или, возможно, инвестиционного проекта.
+			p.intro__desc Мы гарантируем атмосферу гармонии, ведь именно такой смысл закладываем в понятие экосферы «Метрополис».
+	.slider__wrap
+		section.salon.info
+			.info__content
+				.info__title ВІТАЛЬНЯ
+				.info__img
+					+img('salon.png')
+					.info__item.salon__item--1
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Електрофурнітура SCHNEIDER або аналоги в тому ж класі якості. Силові кабелі (матеріал - мідь, негорючі). Слабкострумові системи - кабельна розводка інтернету/ТВ.
+					.info__item.salon__item--2
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Натяжна стеля з матовою поверхнею, що імітує штукатурку та має значні переваги перед оштукатуреною поверхнею - міцність покриття, вологостійкість та довговічність.
+					.info__item.salon__item--3
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Кондиціонер Cooper&Hunter.
+					.info__item.salon__item--4
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Основа – штукатурка. Склополотно для міцності. Шпаклівка. Фарбування у декілька шарів.
+					.info__item.salon__item--5
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Міжкімнатні двері МДФ (Україна). Якісне покриття еко шпону має надійну, стійку до пошкоджень поверхню.
+					.info__item.salon__item--6
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Ламінат 32 класу зносостійкості: екологічно чиста, надійна та міцна ламінована підлога.
+		section.kitchen.info
+			.info__content
+				.info__title Кухня
+				.info__img
+					+img('kitchen-bg.png')
+					.info__item.kitchen__item--1
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Витяжка <br> телескопічна
+					.info__item.kitchen__item--2
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Холодильник вбудований
+					.info__item.kitchen__item--3
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Електрична варильна поверхня
+					.info__item.kitchen__item--4
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Вбудована електрична духова шафа
+					.info__item.kitchen__item--5
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Корпусні меблі з ДСП, МДФ – австрійського виробника, фурнітура – Müller.
+					.info__item.kitchen__item--6
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Посудомийна машина
+					.info__item.kitchen__item--7
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Мийка зі змішувачем
+		section.bathroom.info
+			.info__content
+				.info__title ванна кімната
+				.info__img
+					+img('bed-room.png')
+					.info__item.bathroom__item--1
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Дзеркало
+					.info__item.bathroom__item--2
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Основа – штукатурка або гіпсокартон Зовнішнє оздоблення – керамогранітна плитка.
+					.info__item.bathroom__item--3
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Умивальник з тумбою та змішувачем
+					.info__item.bathroom__item--4
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Керамогранітна плитка для підлоги.
+					.info__item.bathroom__item--5
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Унітаз підвісний; кришка softclose
+					.info__item.bathroom__item--6
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Ванна акрилова <br> прямокутна або душова кабіна зі змішувачем та душовим гарнітуром
+					.info__item.bathroom__item--7
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Вентилятор вбудований
+					.info__item.bathroom__item--8
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Електрична рушникосушарка
+					.info__item.bathroom__item--9
+						.info__dot
+							span.info__dot-small
+						.info__tooltip Пральна машина Bosch
+
+
+	.video
+		.container
+			.video__content
+				.video__block
+					button(class="video__play" type="button" data-play="play")
+					video(src="static/video.mp4" controls="true")
+				.video__btns
+					a(href="#" class="btn video__btn video__btn--download") Оздоблення квартир
+					a(href="#" class="btn video__btn video__btn--consultation") Отримати консультацію
+
+block footer
+	include ../includes/footer.pug
+
+block header

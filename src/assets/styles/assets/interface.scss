@@ -1,0 +1,49 @@
+.row {
+  @include row-flex();
+}
+
+.btn {
+  width: 180px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #fff;
+  font-weight: 700;
+  background-color: #EBA149;
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 8px 0;
+  text-decoration: none;
+
+
+  &:hover {
+    background-color: darken(#EBA149, 10%);
+  }
+
+  &:active {
+    background-color: darken(#EBA149, 15%);
+  }
+}
+
+.page__inner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+
+  .page__content {
+    flex-grow: 1;
+  }
+
+  .page__footer-wrapper {
+    flex-shrink: 0;
+  }
+}
+
+.section {
+  min-height: 100vh;
+}

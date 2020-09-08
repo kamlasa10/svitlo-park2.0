@@ -1,0 +1,835 @@
+
+extends ../layout/main
+block variable
+	-
+		var title_page = 'Вибір за параметрами'
+		var id_page = 'choise-params'
+		var class_page = 'choise-params'
+	
+block meta
+	title= title_page
+	meta(name='description', content='')
+block head
+		link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+	script(defer src='./assets/scripts/index.js')
+block content
+	.choise.section
+		.container
+			.choise__top
+				h1.choise__top-title Вибір за параметрами
+				.choise__top-wrap
+					.choise__top-text Фільтри
+					label.switch.choise__top-switch
+						input(type="checkbox")
+						span.slider.round
+					.choise__top-text.choise__top-text--ml Генплан
+			.choise__top-tabs
+				div(class="choise__top-tab choise__top-tab--1" data-flat="smart")
+					.choise__top-tab-info S
+					.choise__top-tab-text Smart-планування
+				div(class="choise__top-tab choise__top-tab--active choise__top-tab--2" data-flat="1Room")
+					.choise__top-tab-info 1
+					.choise__top-tab-text Однокімнатні
+				div(class="choise__top-tab choise__top-tab--3" data-flat="2Room")
+					.choise__top-tab-info 2
+					.choise__top-tab-text Двокімнатні
+				div(class="choise__top-tab choise__top-tab--4" data-flat="3Room")
+					.choise__top-tab-info 3
+					.choise__top-tab-text Трикімнатні
+				div(class="choise__top-tab choise__top-tab--5" data-flat="2floor")
+					.choise__top-tab-info Д
+					.choise__top-tab-text Дворівневі
+			.choise__filter
+				.choise__filter-item
+					.choise__filter-text Будинок
+					input(type="range" class="choise__filter-input choise__filter-input--house")
+				.choise__filter-item
+					.choise__filter-text Поверх
+					input(type="range" class="choise__filter-input choise__filter-input--floor")
+				.choise__filter-item
+					.choise__filter-text Черга будівництва
+					input(type="range" class="choise__filter-input choise__filter-input--stage")
+				.choise__filter-item
+					.choise__filter-text Площа квартири
+					input(type="range" class="choise__filter-input choise__filter-input--param")
+			.choise__wrap
+				div(class="choise__content" data-apart="smart")
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+				div(class="choise__content" data-apart="1Room")
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+				div(class="choise__content" data-apart="2Room")
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 2А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+				div(class="choise__content" data-apart="3Room")
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+				div(class="choise__content" data-apart="2floor")
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+					.choise__item
+						.choise__left
+							+img('apart-img.png')
+						.choise__right
+							.choise__title КВАРТИРА 1А
+							.choise__list
+								.choise__list-item
+									.choise__info Будинок
+									.choise__date 1
+								.choise__list-item
+									.choise__info Поверх
+									.choise__date 3
+								.choise__list-item
+									.choise__info Кімнат
+									.choise__date 1
+								.choise__list-item
+									.choise__info Загальна пл. м2
+									.choise__date 37
+								.choise__list-item
+									.choise__info Житлова пл. м2
+									.choise__date 37
+							button(class="choise__btn btn") Переглянути
+block footer
+	include ../includes/footer.pug
+
+block header
